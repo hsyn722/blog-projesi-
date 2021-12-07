@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="jumbotron text-center">
+    <h3>edges</h3>
+    <p>it is the enter page. </p>    
+</div>
+
+{% for i in numbers %}
+<li>id: {{i.id}} - generation: {{i.general}}</li>
+
+{% endfor %}
+{% endblock body %}

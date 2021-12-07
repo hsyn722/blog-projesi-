@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+{% from "includes/formhelpers.html" import render_field %}
+<h3> makale ekle </h3>
+<hr>
+<form method='post'>
+    {{ render_field(form.title) }}
+    {{ render_field(form.content, class="form-control") }}
+    <button type="submit" class="btn btn-success">makale ekle</button>
+</form>
+
+{% endblock body %}
