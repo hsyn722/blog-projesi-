@@ -252,6 +252,7 @@ def search():
         else:
             articles = cursor.fetchall()
             return render_template("articles.html", articles = articles)
+       
 
 
     
